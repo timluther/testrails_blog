@@ -1,0 +1,274 @@
+
+$title-bg: #556688; 
+$cont-bg: #334466; 
+$inner-cont-bg: #223355; 
+
+body
+{
+  background-image:"bgrnd.gif";
+  color: #A9CDFF; 
+
+  position:absolute;
+  left:0px;
+  top:0px;
+  min-height:500px;
+  height:100%;
+  width:80%;
+  text-align: justify;
+  background-color: #230023;  
+  background-repeat:repeat ;
+  font-family: "Arial, Gill Sans MT", "Gill Sans", GillSans,  Helvetica, sans-serif;
+  padding:2px;
+  margin-left:20px;
+  margin-right:0;
+  margin-top:0;
+  margin-bottom:0;
+  padding:0px;
+}
+
+a:link 
+{
+  color:#FFCDFF;text-shadow: 0 0 0.8em #44DDFF, 0 0 0.2em #a9FFff;
+  transition: all 0.25s ease-in-out;
+}      
+a:hover
+{
+  color:#a9FFff;text-shadow: 0 0 1.8em #a9FFff, 0 0 0.8em #a9FFff;
+  transition: all 0.25s ease-in-out;
+}  
+
+a:active
+{
+  color:#A9CDFF;text-shadow: 0 0 0.8em #44DDFF, 0 0 0.2em #a9FFff;
+  transition: all 0.25s ease-in-out;
+} 
+
+a:visited
+{
+  color:#A9CDFF;text-shadow: 0 0 0.8em #44DDFF, 0 0 0.2em #FFFFff;
+  transition: all 0.25s ease-in-out;
+} 
+
+
+html
+{
+  height:100%;
+  width:100%;
+}
+#Container
+{
+  margin-left:auto;
+  margin-right:auto;
+  width: 100%;
+}
+
+
+
+#ContentPane
+{
+  
+}
+
+
+#MainSection /*default settings for content divs*/
+{
+  
+}
+/*div.ssimage*/
+#PlanContent
+{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+#HomeContent
+{
+  margin-left:2%;
+  margin-right:2%;
+}
+
+#ScreensContent
+{
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+#ScreensContent img
+{   
+  margin:5px;
+  margin-bottom:15px;
+  box-shadow: rgba(0,0,0,1) 0px 0px 20px;   
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+#ScreensContent img:hover
+{   
+  
+  box-shadow: rgba(0,1,1,1) 0px 0px 40px;   
+}
+
+
+.ArticleText
+{
+  width:80%;
+  background-color: $cont-bg;
+  border-width: thin;
+  border-color: #112266;
+  border-style: none;
+  border-radius: 5px;
+  margin-left:0px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:5px;
+}
+
+.Content
+{
+  
+  display:inline-block;
+  margin-left: 110px;
+  padding-left:5px;
+  width:80%;
+  border-radius: 5px;
+  min-height:100%;
+  background-color: $cont-bg;
+  position:absolute;
+  left:0px;
+  top:0px;
+
+  background-image:url('../img/tilebgrnd.gif');
+}
+
+.ButtonBarItem
+{  
+  
+  width:80%;
+  min-height:100px;
+  margin: 15px;
+  padding:15px;  
+  background-color: $inner-cont-bg;
+  border-radius: 5px;
+
+}
+
+.ButtonBarBlock
+{
+  margin: 15px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+}
+
+.ButtonBar
+{
+  vertical-align: center;
+  background-color: $cont-bg;
+  margin: 15px;
+  padding:15px;  
+  min-height:40px;
+  border-radius: 5px;
+  $title-bg: #556688; 
+}
+
+
+
+.ArticlesList td
+{
+   background-color: $inner-cont-bg;
+   border-radius: 5px;
+   padding:5px;
+}
+
+.Form 
+{  
+  width:80%;
+  background-color: $cont-bg; 
+  border-width: thin;
+  border-color: #112266;
+  border-style: none;
+  border-radius: 5px;
+  margin-left:0px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:5px;
+}
+
+.Form
+
+h1, h2, h3, h4, .Title {color: #B9EEFF;   
+    background-color: $title-bg;    
+    border-width: thin;
+    border-color: #112266;
+    border-style: none;
+    border-radius: 5px;
+    margin-left:0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:5px;
+    text-shadow: 0 0 0.8em #44DDFF, 0 0 0.2em #a9FFff;
+    }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
